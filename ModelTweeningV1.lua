@@ -4,7 +4,7 @@ local function TweenCharacterToModel(player, modelName, duration)
     local Players = game:GetService("Players")
 
     -- Wait for the model to exist
-    local modelToTween = workspace:WaitForChild(modelName)
+    local modelToTween = workspace:FindFirstChild(modelName)
 
     -- Function to tween the player's character to the target model
     local function TweenCharacter(player, targetModel)
